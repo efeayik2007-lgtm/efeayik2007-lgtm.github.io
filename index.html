@@ -822,10 +822,16 @@
     .pwa-banner-text { font-size: 13px; color: var(--text); line-height: 1.4; }
     .pwa-banner-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
     /* ─── RESPONSIVE ─── */
+    /* Prevent horizontal scroll on all devices */
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    img, video, iframe, canvas { max-width: 100%; }
     @media (max-width: 768px) {
       .hero-photo-wrap { padding: 0 24px; margin-top: 24px; }
       .hero-photo { width: 72px; height: 72px; }
-      nav { padding: 0 20px; }
+      nav { padding: 0 20px; z-index: 9200; }
       .nav-links { display: none !important; }
       .nav-hamburger { display: flex; }
       #hero { padding: 40px 24px 60px; }
@@ -840,7 +846,9 @@
       .cs-block-sidebar { display: flex; gap: 12px; align-items: center; }
       .cs-sn { margin-bottom: 0; }
       .cs-grid { grid-template-columns: 1fr !important; }
-      .cs-mockup-wrap img { border-radius: 8px; }
+      .cs-mockup-wrap { overflow: hidden; }
+      .cs-mockup-wrap img { border-radius: 8px; width: 100%; }
+      .cs-img-wrap, .cs-img-half { overflow: hidden; }
       #contact { padding: 48px 24px; }
       .contact-grid { grid-template-columns: 1fr !important; gap: 32px; }
       .contact-heading { font-size: 36px; }
