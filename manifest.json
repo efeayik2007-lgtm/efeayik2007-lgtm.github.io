@@ -1,0 +1,18 @@
+{
+  "name": "Efe Ayık — Portfolio",
+  "short_name": "Efe Ayık",
+  "description": "Visual Communication Designer based in Istanbul",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23080808'/><text x='256' y='340' text-anchor='middle' font-family='serif' font-size='240' fill='%23e8e0c8'>EA</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
